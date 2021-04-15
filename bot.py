@@ -84,14 +84,14 @@ def a(client, message):
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
             secmul *= 60
-        message.reply_audio(audio_file, caption=rep, parse_mode='md',quote=False, title=title, duration=dur, thumb=thumbnail)
+        message.reply_audio(audio_file, caption=rep, parse_mode='md',quote=False, title=title, duration=dur)
         m.delete()
     except Exception as e:
         m.edit('❌ Error')
         print(e)
     try:
         os.remove(audio_file)
-        os.remove(thumb_name)
+#         os.remove(thumb_name)
     except Exception as e:
         print(e)
 
