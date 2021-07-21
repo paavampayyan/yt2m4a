@@ -3,7 +3,6 @@ from pytube.extract import video_id
 import youtube_dl
 from youtube_search import YoutubeSearch
 import requests
-from youtubesearchpython import VideosSearch
 from googleapiclient.discovery import build
 from pprint import pprint
 import time
