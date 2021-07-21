@@ -4,3 +4,4 @@ youtube-dl
 youtube_search
 requests
 pytube
+google-api-python-client
